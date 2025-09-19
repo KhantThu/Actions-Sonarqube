@@ -63,7 +63,7 @@ jobs:
       - name: Unit test case  
         run: mvn test
 
-build_project_and_sonar_scan:
+  build_project_and_sonar_scan:
     needs: test
     runs-on: self-hosted
     steps:
@@ -79,7 +79,6 @@ build_project_and_sonar_scan:
 
       - name: Build Project
         run: mvn package
-        
         with:
         # Disabling shallow clones is recommended for improving the relevancy of reporting
         fetch-depth: 0
