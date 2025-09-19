@@ -1,4 +1,4 @@
-name: CICD Pipeline For Java
+name: CICD Pipeline For 
 
 on:
   push:
@@ -136,5 +136,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: khantthu/bankapp:latest
+          tags: khantthu/mmshop-product-api:latest
     
