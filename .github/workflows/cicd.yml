@@ -6,7 +6,7 @@ on:
 
 jobs:
   compile:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
